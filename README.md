@@ -41,7 +41,7 @@ I indexed the first column to avoid any errors, and converted the diagnosis from
 
 ####  Initial Random Forest Analysis
 
-There are 30 features in this dataset, I used scikit to split out the training subsets to do an initial random forest analysis as a benchmark for future improvements. After training and testing my model on the test set, while the accuracy held at 95% with the model only holding 37% accuracy after applying to my initial dataset. 
+There are 30 features in this dataset, I used scikit to split out the training subsets to do an initial random forest analysis as a benchmark for future improvements. After training and testing my model on the test set the accuracy held at 95%, but unfortunately the model only held 37% accuracy after applying to the full initial dataset. Abandon hope all ye who enter here, witness the curse  of dimensionality. Let's try to improve this.
 
 ####  Principal Component Analysis
 
