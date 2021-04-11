@@ -1,3 +1,10 @@
+<p align="center">
+  <b>Test</b><br>
+  <a test </a> |
+  <a test </a> |
+  <a test </a> 
+  <br><br>
+</p>
 # Performing Predictive Analysis for Breast Cancer Diagnostics
 ### With K-Means Clustering and Random Forest Algorithms in Python with JupyterLab
 
