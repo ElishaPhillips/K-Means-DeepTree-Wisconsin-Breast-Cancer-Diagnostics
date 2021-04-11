@@ -37,9 +37,15 @@ Source and feature details:
 
 ####  Initial Cleaning and Processing Steps
 
+I indexed the first column to avoid any errors, and converted the diagnosis from M/B to a binary operator. I split the diagnosis off into a separate 'y' dataframe, and pushed the predictors to an 'x' dataset. 
+
 ####  Initial Random Forest Analysis
 
+There are 30 features in this dataset, I used scikit to split out the training subsets to do an initial random forest analysis as a benchmark for future improvements. After training and testing my model on the test set, while the accuracy held at 95% with the test set I only achieved 37% accuracy after applying to my initial dataset. 
+
 ####  Principal Component Analysis
+
+![PCA](https://github.com/ElishaPhillips/Python-K-Means-RandomForest-Wisconsin-Breast-Cancer-Diagnostics/blob/9c7d169e99817ed944578b93f33bdc127881913a/Graphs/Visualising30.png)
 
 ![PCA30](https://github.com/ElishaPhillips/Python-K-Means-RandomForest-Wisconsin-Breast-Cancer-Diagnostics/blob/9c7d169e99817ed944578b93f33bdc127881913a/Graphs/Visualising30.png)
 
