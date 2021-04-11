@@ -1,8 +1,6 @@
 <p align="center">
-  <header>
      <h1> Performing Predictive Analysis for Breast Cancer Diagnostics</h1>
      <h3> With K-Means Clustering and Random Forest Algorithms in Python with JupyterLab</h3>
-  </header>
 </p>
 
 
