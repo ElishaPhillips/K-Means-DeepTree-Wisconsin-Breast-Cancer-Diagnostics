@@ -9,8 +9,11 @@ Source and feature details:
 >[UCI ML Breast Cancer Wisconsin Dataset](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data)
 >Features are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass. They describe characteristics of the cell nuclei present in the image.
 >Attribute Information:
+
 >1) ID number
+
 >2) Diagnosis (M = malignant, B = benign)
+
 >3-32)Ten real-valued features are computed for each cell nucleus:
 
 >a) radius (mean of distances from center to points on the perimeter)
