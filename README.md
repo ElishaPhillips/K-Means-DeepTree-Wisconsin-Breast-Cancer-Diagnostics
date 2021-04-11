@@ -47,8 +47,6 @@ There are 30 features in this dataset, I used scikit to split out the training s
 
 Here's the initial look at the variance explained by the 30 features:
 
-![PCA](https://github.com/ElishaPhillips/Python-K-Means-RandomForest-Wisconsin-Breast-Cancer-Diagnostics/blob/067a1fe05c20a5ec0574d580becd5664fd1c97c9/Graphs/pca.png)
-
 | 1     | 2    | 3     | 4     | 5     | 6     | 7     | 8     | 9     | 10    |
 |-------|------|-------|-------|-------|-------|-------|-------|-------|-------|
 | 44.3  | 63.3 | 72.7  | 79.3  | 84.8  | 88.8  | 91.1  | 92.7  | 94.1  | 95.3  |
@@ -61,15 +59,31 @@ Here's the initial look at the variance explained by the 30 features:
 |--------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
 |  99.8  |  99.9 | 100.0 | 100.1 | 100.2 | 100.3 | 100.3 | 100.3 | 100.3 | 100.3 |
 
+This dataset is a great example of one that can be improved with Principle Component Analysis - we can see that the first 10 principal components accont for over 95% of the variation. 
+
+![PCA](https://github.com/ElishaPhillips/Python-K-Means-RandomForest-Wisconsin-Breast-Cancer-Diagnostics/blob/067a1fe05c20a5ec0574d580becd5664fd1c97c9/Graphs/pca.png)
+
+Here's a quick graph of the first 15 components plotted against the last 15:
 ![PCA30](https://github.com/ElishaPhillips/Python-K-Means-RandomForest-Wisconsin-Breast-Cancer-Diagnostics/blob/9c7d169e99817ed944578b93f33bdc127881913a/Graphs/Visualising30.png)
 
+Here's a quick graph of the 10 components I'll be selecting for further analysis:
 ![PCA10](https://github.com/ElishaPhillips/Python-K-Means-RandomForest-Wisconsin-Breast-Cancer-Diagnostics/blob/9c7d169e99817ed944578b93f33bdc127881913a/Graphs/Visualising10.png)
 
 ####  K-Means Clustering
 
+I used K-Means clustering to fit the 10 principal components into 2 clusters. The predictive accuracy was 91.04% - a big improvement! 
+I also labeled the incorrect values according to Malignant or Benign. This is the scatterplot of my K-cluster analysis with incorrect values labeled.
+
 ![KMeansAnalysis](https://github.com/ElishaPhillips/Python-K-Means-RandomForest-Wisconsin-Breast-Cancer-Diagnostics/blob/9c7d169e99817ed944578b93f33bdc127881913a/Graphs/BCWD.KCluster.png)
 
 ####  Random Forest with 10 Principal Components
+
+I then applied the Random Forest algorithm again, this time using the 10 selected components. I repeated the split and training processes on my final model. The predictive accuracy is now improved to 95.08%! 
+
+Scatterplot of the final Random Forest analysis with incorrect values labeled:
+
+I used K-Means clustering to fit the 10 principal components into 2 clusters. The predictive accuracy was 91.04% - a big improvement! 
+I also labeled the incorrect values according to Malignant or Benign. This is the scatterplot of my K-cluster analysis with incorrect values labeled.
 
 ![RandForestAnalysis](https://github.com/ElishaPhillips/Python-K-Means-RandomForest-Wisconsin-Breast-Cancer-Diagnostics/blob/9c7d169e99817ed944578b93f33bdc127881913a/Graphs/BCWD.RandTree.png)
 
