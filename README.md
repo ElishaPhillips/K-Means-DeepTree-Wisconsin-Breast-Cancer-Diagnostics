@@ -1,10 +1,9 @@
 <p align="center">
-  <b>Some Links:</b>
-  <br>Some Links:</b>
-  <br>Some Links:</b>
+  <b># Performing Predictive Analysis for Breast Cancer Diagnostics</b>
+  <br>### With K-Means Clustering and Random Forest Algorithms in Python with JupyterLab</b>
 </p>
-# Performing Predictive Analysis for Breast Cancer Diagnostics
-### With K-Means Clustering and Random Forest Algorithms in Python with JupyterLab
+
+
 
 ######  Source
 >[UCI ML Breast Cancer Wisconsin Dataset](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data)
