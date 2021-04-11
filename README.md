@@ -89,7 +89,7 @@ Scatterplot of the final Random Forest analysis with incorrect values labeled:
 
 ####  Results
 
-By reducing the features to 1/3, I managed to improve my classification algorithm to 95% from  the initially dismal 37%. K-Clusters were effective too, reaching 91% classification accuracy. Further analysis could be pursued with these 10 principal components, attempting different algorithms such as logistic regression to see if we can reach 99+%. 
+By reducing the features to 1/3, I managed to improve my classification algorithm to 95% from  the initially dismal 37%. K-Clusters were effective too, reaching 91% classification accuracy.
 
 
 
