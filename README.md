@@ -10,7 +10,7 @@
 
 # Principal Component Analysis
 
-![PCA30](hhttps://github.com/ElishaPhillips/Python-K-Means-RandomForest-Wisconsin-Breast-Cancer-Diagnostics/blob/main/Graphs/Visualising30.png)
+![PCA30](https://github.com/ElishaPhillips/Python-K-Means-RandomForest-Wisconsin-Breast-Cancer-Diagnostics/blob/main/Graphs/Visualising30.png)
 
 ![PCA10](https://github.com/ElishaPhillips/Python-K-Means-RandomForest-Wisconsin-Breast-Cancer-Diagnostics/blob/main/Graphs/Visualising10.png)
 
@@ -20,7 +20,7 @@
 
 ## Random Forest with 10 Principal Components
 
-![RForestAnalysis](https://github.com/ElishaPhillips/Python-K-Means-RandomForest-Wisconsin-Breast-Cancer-Diagnostics/blob/main/Graphs/BCWD.Tree.png)
+![RandForestAnalysis](https://github.com/ElishaPhillips/Python-K-Means-RandomForest-Wisconsin-Breast-Cancer-Diagnostics/blob/main/Graphs/BCWD.Tree.png)
 
 ## Results
 
