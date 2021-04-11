@@ -1,6 +1,6 @@
 <p align="center">
-  <b># Performing Predictive Analysis for Breast Cancer Diagnostics</b>
-  <br>### With K-Means Clustering and Random Forest Algorithms in Python with JupyterLab</b>
+#    <b> Performing Predictive Analysis for Breast Cancer Diagnostics</b>
+###  <br> With K-Means Clustering and Random Forest Algorithms in Python with JupyterLab</b>
 </p>
 
 
