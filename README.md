@@ -1,7 +1,7 @@
 <p align="center">
-  <b>Some Links:</b> 
-  <b>Some Links:</b>
-  <b>Some Links:</b> 
+  <b>Some Links:</b>|
+  <b>Some Links:</b>|
+  <b>Some Links:</b>|
 </p>
 # Performing Predictive Analysis for Breast Cancer Diagnostics
 ### With K-Means Clustering and Random Forest Algorithms in Python with JupyterLab
