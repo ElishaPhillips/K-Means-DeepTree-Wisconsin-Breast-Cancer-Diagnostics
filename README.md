@@ -82,13 +82,11 @@ I then applied the Random Forest algorithm again, this time using the 10 selecte
 
 Scatterplot of the final Random Forest analysis with incorrect values labeled:
 
-I used K-Means clustering to fit the 10 principal components into 2 clusters. The predictive accuracy was 91.04% - a big improvement! 
-I also labeled the incorrect values according to Malignant or Benign. This is the scatterplot of my K-cluster analysis with incorrect values labeled.
-
 ![RandForestAnalysis](https://github.com/ElishaPhillips/Python-K-Means-RandomForest-Wisconsin-Breast-Cancer-Diagnostics/blob/9c7d169e99817ed944578b93f33bdc127881913a/Graphs/BCWD.RandTree.png)
 
 ####  Results
 
+By reducing the features to 1/3, I managed to improve my classification algorithm to 95% from  the initially dismal 37%. K-Clusters were effective too, reaching 91% classification accuracy. Further analysis could be pursued with these 10 principle components, attempting different algorithms such as logistic regression to see if we can bridge the gap to 99%. 
 
 
 
