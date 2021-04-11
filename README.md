@@ -45,7 +45,19 @@ There are 30 features in this dataset, I used scikit to split out the training s
 
 ####  Principal Component Analysis
 
-![PCA](https://github.com/ElishaPhillips/Python-K-Means-RandomForest-Wisconsin-Breast-Cancer-Diagnostics/blob/9c7d169e99817ed944578b93f33bdc127881913a/Graphs/Visualising30.png)
+Here's the initial look at the variance explained by the 30 features:
+
+![PCA](https://github.com/ElishaPhillips/Python-K-Means-RandomForest-Wisconsin-Breast-Cancer-Diagnostics/blob/067a1fe05c20a5ec0574d580becd5664fd1c97c9/Graphs/pca.png)
+
+| 1     | 2    | 3     | 4     | 5     | 6     | 7     | 8     | 9     | 10    |
+|-------|------|-------|-------|-------|-------|-------|-------|-------|-------|
+| 44.3  | 63.3 | 72.7  | 79.3  | 84.8  | 88.8  | 91.1  | 92.7  | 94.1  | 95.3  |
+| 11    | 12   | 13    | 14    | 15    | 16    | 17    | 18    | 19    | 20    |
+|-------|------|-------|-------|-------|-------|-------|-------|-------|-------|
+| 96.3  | 97.2 | 98.0  | 98.5  | 98.8  | 99.1  | 99.3  | 99.5  | 99.7  | 99.8  |
+| 21    | 22   | 23    | 24    | 25    | 26    | 27    | 28    | 29    | 20    |
+|-------|------|-------|-------|-------|-------|-------|-------|-------|-------|
+| 99.8  | 99.9 | 100.0 | 100.1 | 100.2 | 100.3 | 100.3 | 100.3 | 100.3 | 100.3 |
 
 ![PCA30](https://github.com/ElishaPhillips/Python-K-Means-RandomForest-Wisconsin-Breast-Cancer-Diagnostics/blob/9c7d169e99817ed944578b93f33bdc127881913a/Graphs/Visualising30.png)
 
