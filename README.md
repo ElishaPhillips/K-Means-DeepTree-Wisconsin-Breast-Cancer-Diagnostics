@@ -4,11 +4,11 @@
 h1 {text-align: center;}
 h3 {text-align: center;}
 </style>
-<p align="center">
+</head>
      <h1> Performing Predictive Analysis for Breast Cancer Diagnostics</h1>
      <h3> With K-Means Clustering and Random Forest Algorithms in Python with JupyterLab</h3>
-</p>
-</head>
+
+
 
 
 ######  Source
