@@ -62,7 +62,7 @@ Here's the initial look at the variance explained by the 30 features:
 |--------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
 |  99.8  |  99.9 | 100.0 | 100.1 | 100.2 | 100.3 | 100.3 | 100.3 | 100.3 | 100.3 |
 
-This dataset is a great example of one that can be improved with Principal Component Analysis - we can see that the first 10 principal components accont for over 95% of the variation. 
+This dataset is a great example of one that can be improved with Principal Component Analysis - we can see that the first 10 principal components account for over 95% of the variation. 
 
 ![PCA](https://github.com/ElishaPhillips/Python-K-Means-RandomForest-Wisconsin-Breast-Cancer-Diagnostics/blob/067a1fe05c20a5ec0574d580becd5664fd1c97c9/Graphs/pca.png)
 
