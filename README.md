@@ -1,6 +1,6 @@
 
-# Performing Predictive Analysis for Breast Cancer Diagnostics
-### With K-Means Clustering and Random Forest Algorithms in Python with JupyterLab
+# Decomposing Random Forest Algorithms: Predictive Analysis for Breast Cancer Diagnostics 
+### K-Means Clustering and Random Forest Algorithms in Python with JupyterLab
 
 ####  Source
 This dataset was pulled from Kaggle, and comprises a set of nuclei features for breast tumor diagnosis. 
