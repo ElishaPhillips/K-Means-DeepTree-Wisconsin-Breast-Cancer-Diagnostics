@@ -46,7 +46,7 @@ I indexed the first column to avoid any errors, and converted the diagnosis from
 
 There are 30 features in this dataset, I used scikit to split out the training subsets to do an initial random forest analysis as a benchmark for future improvements. After training and testing my model on the test set the accuracy held at 95%, but unfortunately the model only held 37% accuracy after applying to the full initial dataset. Why did it overfit the data so severely? 
 
-Random Forest algorithms work best with independent features for each decision tree. The features in this dataset, specifically nuclei measurements such as perimeter, area, and radius are split even further into the max, mean, and standard deviation. That most likely accounts for the colinearity that's affecting the algorithm's accuracy. Let's try to improve this.
+Though Random Forest algorithms are known for overfit resistance due to their implementation of bootstrap aggregation, they can still be affected if a large enough section of the features are highly correlated or if the distribution is imbalanced. They tend to work best with independent features for each decision tree. The features in this dataset, specifically nuclei measurements such as perimeter, area, and radius are split even further into the max, mean, and standard deviation. That most likely accounts for the colinearity that's affecting the algorithm's accuracy. Let's try to improve this.
 
 ####  Principal Component Analysis
 
