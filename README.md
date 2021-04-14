@@ -47,8 +47,11 @@ I indexed the first column to avoid any errors, and converted the diagnosis from
 There are 30 features in this dataset, I used scikit to split out the training subsets to do an initial random forest analysis as a benchmark for future improvements. 
 
 > X/y test split at default 25%
+
 > X/y train split at default 25%
+
 >n_estimators=100
+
 >max_depth=4
 
 After training and testing my model on the test set the accuracy held at 95%, but unfortunately the model only held 37% accuracy after applying to the full initial dataset. Why did it overfit the data so severely? 
