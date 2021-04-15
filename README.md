@@ -114,13 +114,18 @@ Though traditionally random forest algorithms act as a "black box", let's try op
 
 Prediction = Bias + feature_1_contribution+ …+feature_n_contribution
 
+_One of the decision trees for the final model:_
+
+![RandForestAnalysis](https://github.com/ElishaPhillips/Python_K_Means_Random_Forest_Breast_Cancer_Diagnostics/blob/b4e2482c448e0eedb9c5cb142e08f6b105f18161/Graphs/tree_modelb.png)
+
 Thankfully sci kit saves the elements for each leaf node, and using treeinvestigator to extract these I formed a database holding the prediction, bias, and left and right contributions per prediction.
 
 Aggregating the contributions per feature across the 569 predictions:
 
-![RandForestAnalysis](https://github.com/ElishaPhillips/Python_K_Means_Random_Forest_Breast_Cancer_Diagnostics/blob/a12459c25c54722f6b0e0da53e19e3d7ea2e5991/Graphs/ModelB.png)
+![RandForestAnalysis](https://github.com/ElishaPhillips/Python_K_Means_Random_Forest_Breast_Cancer_Diagnostics/blob/b4e2482c448e0eedb9c5cb142e08f6b105f18161/Graphs/ModelA.png)
 
-![RandForestAnalysis](https://github.com/ElishaPhillips/Python_K_Means_Random_Forest_Breast_Cancer_Diagnostics/blob/a12459c25c54722f6b0e0da53e19e3d7ea2e5991/Graphs/ModelA.png)
+
+![RandForestAnalysis](https://github.com/ElishaPhillips/Python_K_Means_Random_Forest_Breast_Cancer_Diagnostics/blob/b4e2482c448e0eedb9c5cb142e08f6b105f18161/Graphs/ModelB.png)
 
 
 
