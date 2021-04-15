@@ -1,5 +1,5 @@
 
-# Decomposing Random Forest Algorithms: Predictive Analysis for Breast Cancer Diagnostics 
+# Predictive Analysis for Breast Cancer Diagnostics 
 ### K-Means Clustering and Random Forest Algorithms in Python with JupyterLab
 
 ####  Source
@@ -42,22 +42,6 @@ Source and feature details:
 
 I indexed the first column to avoid any errors, and converted the diagnosis from M/B to a binary operator. I split the diagnosis off into a separate 'y' dataframe, and pushed the predictors to an 'x' dataset. 
 
-####  Initial Random Forest Analysis
-
-There are 30 features in this dataset, I used scikit to split out the training subsets to do an initial random forest analysis as a benchmark for future improvements. 
-
-> X/y test split at default 25%
-
-> X/y train split at default 25%
-
->n_estimators=100
-
->max_depth=4
-
-After training and testing my model on the test set the accuracy held at 95%, but unfortunately the model only held 37% accuracy after applying to the full initial dataset. Why did it overfit the data so severely? 
-
-Though Random Forest algorithms are known for overfit resistance due to their implementation of bootstrap aggregation, they can still be affected if a large enough section of the features are highly correlated or if the distribution is imbalanced. They tend to work best with independent features for each decision tree. The features in this dataset, specifically nuclei measurements such as perimeter, area, and radius are split even further into the max, mean, and standard deviation. That most likely accounts for the colinearity that's affecting the algorithm's accuracy. Let's try to improve this.
-
 ####  Principal Component Analysis
 
 Here's the initial look at the variance explained by the 30 features:
@@ -86,33 +70,58 @@ Here's a quick graph of the 10 components I'll be selecting for further analysis
 
 ####  K-Means Clustering
 
-I used K-Means clustering to fit the 10 principal components into 2 clusters. The predictive accuracy was 91.04% - a big improvement! 
+I used K-Means clustering to fit the 10 principal components into 2 clusters. The predictive accuracy was 91.04% - not too bad! 
 I also labeled the incorrect values according to Malignant or Benign. This is the scatterplot of my K-cluster analysis with incorrect values labeled.
 
 ![KMeansAnalysis](https://github.com/ElishaPhillips/Python-K-Means-RandomForest-Wisconsin-Breast-Cancer-Diagnostics/blob/9c7d169e99817ed944578b93f33bdc127881913a/Graphs/BCWD.KCluster.png)
 
 ####  Random Forest with 10 Principal Components
 
-I then applied the Random Forest algorithm again, this time using the 10 selected components. I repeated the split and training processes on my final model. The predictive accuracy is now improved to 95.08%! 
+Let's try with Random Forest algorithms now, using the 10 selected components. 
 
-Scatterplot of the final Random Forest analysis with incorrect values labeled:
+Using scikit to split out the training and testing sets:
+
+> X/y test split at default 25%
+
+> X/y train split at default 25%
+
+>n_estimators=100
+
+>max_depth=4
+
+Scatterplot of the Random Forest analysis with incorrect values labeled:
 
 ![RandForestAnalysis](https://github.com/ElishaPhillips/Python-K-Means-RandomForest-Wisconsin-Breast-Cancer-Diagnostics/blob/9c7d169e99817ed944578b93f33bdc127881913a/Graphs/BCWD.RandTree.png)
 
-####  Results
+####  Random Forest Analysis with all features
 
-By reducing the features to 1/3, I managed to improve my classification algorithm to 95% from  the initially dismal 37%. K-Clusters were effective too, reaching 91% classification accuracy.
+Using all 30 features in this dataset this time, I repeated the split and training processes here to compare. 
 
+> X/y test split at default 25%
+
+> X/y train split at default 25%
+
+>n_estimators=100
+
+>max_depth=4
+
+Normalized the initial X dataset using standardscaler: 98.24%
 ______________________________________________________________________________________________________________________________________________
 
-## Second Phase: Investigating the Initial Algorithm
+## Second Phase: Investigating the Algorithms
 
-Extracting the individual prediction paths for each feature for further analysis
+Though traditionally random forest algorithms act as a "black box", let's try opening it and see what's going on ;b. Trying to visualize each tree for each decison would be monumental - I saved 100 decision tree images for just one of the 569 predictions. However, theres an easier way. I extracted the individual prediction paths for each feature for further analysis. The algorithm bases it's final predictive factors on the formula:
 
 Prediction = Bias + feature_1_contribution+ …+feature_n_contribution
 
-![RandForestAnalysis](https://github.com/ElishaPhillips/Python_K_Means_Random_Forest_Breast_Cancer_Diagnostics/blob/a12459c25c54722f6b0e0da53e19e3d7ea2e5991/Graphs/ModelA.png)
+Thankfully sci kit saves the elements for each leaf node, and using treeinvestigator to extract these I formed a database holding the prediction, bias, and left and right contributions per prediction.
+
+Aggregating the contributions per feature across the 569 predictions:
+
 ![RandForestAnalysis](https://github.com/ElishaPhillips/Python_K_Means_Random_Forest_Breast_Cancer_Diagnostics/blob/a12459c25c54722f6b0e0da53e19e3d7ea2e5991/Graphs/ModelB.png)
+
+![RandForestAnalysis](https://github.com/ElishaPhillips/Python_K_Means_Random_Forest_Breast_Cancer_Diagnostics/blob/a12459c25c54722f6b0e0da53e19e3d7ea2e5991/Graphs/ModelA.png)
+
 
 
 
