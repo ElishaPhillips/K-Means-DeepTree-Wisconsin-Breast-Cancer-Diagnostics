@@ -103,7 +103,15 @@ Scatterplot of the final Random Forest analysis with incorrect values labeled:
 
 By reducing the features to 1/3, I managed to improve my classification algorithm to 95% from  the initially dismal 37%. K-Clusters were effective too, reaching 91% classification accuracy.
 
+______________________________________________________________________________________________________________________________________________
 
+## Second Phase: Investigating the Initial Algorithm
+
+Extracting the individual prediction paths for each feature for further analysis
+Prediction = Bias + feature_1_contribution+ …+feature_n_contribution
+
+![RandForestAnalysis](https://github.com/ElishaPhillips/Python_K_Means_Random_Forest_Breast_Cancer_Diagnostics/blob/a12459c25c54722f6b0e0da53e19e3d7ea2e5991/Graphs/ModelA.png)
+![RandForestAnalysis](https://github.com/ElishaPhillips/Python_K_Means_Random_Forest_Breast_Cancer_Diagnostics/blob/a12459c25c54722f6b0e0da53e19e3d7ea2e5991/Graphs/ModelB.png)
 
 
 
