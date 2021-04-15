@@ -127,7 +127,9 @@ Aggregating the contributions per feature across the 569 predictions:
 
 ![RandForestAnalysis](https://github.com/ElishaPhillips/Python_K_Means_Random_Forest_Breast_Cancer_Diagnostics/blob/b4e2482c448e0eedb9c5cb142e08f6b105f18161/Graphs/ModelB.png)
 
+And here's the contribution by percentage for the final model:
 
+![RandForestAnalysis](https://github.com/ElishaPhillips/Python_K_Means_Random_Forest_Breast_Cancer_Diagnostics/blob/2bd478a5889ff273bd6975ff118979c8387ca8ff/Graphs/ModelBPercentage.png)
 
 
 
