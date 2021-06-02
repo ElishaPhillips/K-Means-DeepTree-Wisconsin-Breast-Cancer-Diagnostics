@@ -1,6 +1,6 @@
 
-# Predictive Analysis for Breast Cancer Diagnostics 
-### K-Means Clustering and Random Forest Algorithms in Python with JupyterLab
+# K-Means Clustering and Analyzing Random Forest Algorithms in Python with JupyterLab
+### Predictive Analysis for Breast Cancer Diagnostics 
 
 ####  Source
 This dataset was pulled from Kaggle, and comprises a set of nuclei features for breast tumor diagnosis. 
@@ -110,9 +110,9 @@ ________________________________________________________________________________
 
 ## Second Phase: Investigating the Algorithms
 
-Though traditionally random forest algorithms act as a "black box", let's try opening it and see what's going on ;b. Trying to visualize each tree for each decison would be monumental - I saved 100 decision tree images for just one of the 569 predictions. However, theres an easier way. I extracted the individual prediction paths for each feature for further analysis. The algorithm bases it's final predictive factors on the formula:
+The random sampling approach with bootstrap aggregation does help to minimize variation, particularly useful with datasets with high dimensionality, such as this one. Though traditionally random forest algorithms act as a "black box", let's try opening it and see what's going on. Trying to visualize each tree for each decison would be monumental - I saved 100 decision tree images for just one of the 569 predictions. However, theres an easier way. I extracted the individual prediction paths for each feature for further analysis. The algorithm bases it's final predictive factors on the formula:
 
-Prediction = Bias + feature_1_contribution+ …+feature_n_contribution
+Prediction = Bias + feature_1_contribution+ …+ feature_n_contribution
 
 _One of the decision trees for the final model:_
 
